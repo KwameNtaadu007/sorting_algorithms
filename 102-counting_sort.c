@@ -3,10 +3,9 @@
 /**
  * counting_sort - To sort an array of integers in
  * ascending order using the Counting sort algorithm
- * 
  * @array: array
  * @size: size
- * 
+ *
  * Return: no return
  */
 
