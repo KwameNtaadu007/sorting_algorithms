@@ -26,28 +26,24 @@ void swap_ints(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	/* Initialize variables */
 	size_t i, len = size;
-	bool swapped = true;
+	bool bubble = false;
 
-	/* Loop through the array */
-	while (swapped)
+	if (array == NULL || size < 2)
+		return;
+
+	while (bubble == false)
 	{
-		swapped = false;
-
-		/* For each element in the array */
+		bubble = true;
 		for (i = 0; i < len - 1; i++)
 		{
-			/* If the current element is greater than the next element */
 			if (array[i] > array[i + 1])
 			{
-				/* Swap the two elements */
 				swap_ints(array + i, array + i + 1);
-				swapped = true;
+				print_array(array, size);
+				bubble = false;
 			}
 		}
-
-		/* Decrement the length of the array */
 		len--;
 	}
 }
