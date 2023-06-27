@@ -101,14 +101,14 @@ void dec_sort(listint_t **ptr, listint_t **limit, listint_t **list)
 }
 
 /**
- * sort_list - sorts a doubly linked list
+ * cocktail_sort_list - sorts a doubly linked list
  * of integers in ascending order
  *
  * @list: head of the linked list
  * Return: no return
  */
 
-void sort_list(listint_t **list)
+void cocktail_sort_list(listint_t **list)
 {
 	listint_t *limit, *limit_1, *ptr;
 
